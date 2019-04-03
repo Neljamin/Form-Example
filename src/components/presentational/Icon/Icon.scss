@@ -1,0 +1,42 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  min-width: 16px;
+}
+
+.icon--large {
+  height: 24px;
+  width: 24px;
+  transform: translateY(4px);
+}
+
+.icon--fill-primary {
+  background: red;  
+}
+
+.icon--circle-primary {
+  border: 1px solid red;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+.icon__arrow-right,
+.icon__arrow-left {
+  content: url('../../../images/arrow.svg');
+  height: 75%;
+  width: 75%;
+}
+
+.icon__arrow-left {
+  transform: rotate(180deg);
+}
+
+.icon__tick {
+  content: url('../../../images/tick.svg');
+  height: 16px;
+  width: 16px;  
+}

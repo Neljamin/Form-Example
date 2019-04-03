@@ -1,0 +1,46 @@
+.button {
+  border: none;
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button__children {
+  display: inline-flex;
+  margin: 0 4px;    
+}
+
+.button--underlined {
+  border-bottom: 2px solid red;
+}
+
+.button--bold {
+  font-weight: bold;
+}
+
+.button--rounded {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+}
+
+.button--fill-primary {
+  background-color: #577cdd;
+  color: #fff;
+}
+
+.button--row-reverse {
+  flex-direction: row-reverse;    
+}
+
+.button--inline {
+  display: inline-flex;
+  margin-right: 16px;
+}
+
+.button--large {
+  height: 56px;
+  font-size: 24px;
+}

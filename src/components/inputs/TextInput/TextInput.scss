@@ -1,0 +1,13 @@
+.text-input {
+  display: inline-block;
+}
+    
+.text-input__input {
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  margin: 45px 0;
+  height: 39px;
+  font-size: 29px;
+}
