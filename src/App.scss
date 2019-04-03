@@ -1,6 +1,9 @@
 .App {
   display: flex;
   flex-direction: column;
+  background-image: url('./images/topography.png');
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .App__header {
@@ -24,14 +27,18 @@
 
 .App__logo {
   padding: 8px;
+  font-size: 20px;
   font-weight: 600;
-  text-align: center;
-  width: 100px;
-  height: 20px;
+  width: 151px;
+  height: 55px;
   line-height: 20px;
   color: #42518f;
   background: #d8d8d8;
   border-radius: 2px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .App__body {
@@ -45,7 +52,7 @@
   position: sticky;
   min-width: 200px;
   padding-right: 24px;
-  top: 100px;
+  top: 207px;
 }
 
 .App__main {
