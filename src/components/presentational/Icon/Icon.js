@@ -6,21 +6,24 @@ import './Icon.scss';
 const Icon = ({
     type,
     circle,
+    circleBackground,
     fill,
     theme,
-    large
+    large,
+    className
 }) => {
     const iconClasses = [
         'icon',
+        className,
         circle && `icon--circle-${theme}`,
+        circleBackground && `icon--circle-background-${theme}`,
         fill && `icon--fill-${theme}`,
         large && 'icon--large'
     ];
 
     return (
         <span className={classNames(iconClasses)}>
-            {type === 'save' && <i className="fas fa-save"></i>}
-            {type && type !== 'save' && <div className={`icon__${type}`} alt={type} />}
+            <div className={`icon__${type}`} alt={type} />
         </span>
     );
 };

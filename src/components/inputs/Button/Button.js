@@ -28,7 +28,7 @@ const Button = ({
 
     return (
         <button className={classNames(...buttonClasses)}>
-            {iconProps && <Icon {...iconProps} />}
+            {iconProps && <Icon className='button__icon' {...iconProps} />}
             <div className='button__children'>
                 {children}
             </div>

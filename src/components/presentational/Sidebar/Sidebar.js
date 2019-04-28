@@ -22,7 +22,7 @@ const Sidebar = ({
                             theme='primary'
                             circle={[SIDEBAR_STATUSES.ACTIVE, SIDEBAR_STATUSES.INCOMPLETE].includes(status)}
                             fill={status === SIDEBAR_STATUSES.ACTIVE}
-                            type={status === SIDEBAR_STATUSES.COMPLETED && 'tick'}
+                            type={status === SIDEBAR_STATUSES.COMPLETED ? 'tick': undefined}
                         />
                         <div className='sidebar__text'>
                             {text}

@@ -1,33 +1,31 @@
 import React, { Component } from 'react';
 
+import './normalize.scss';
 import './App.scss';
 import { Sidebar, ProgressBar, FormPage } from './components/presentational';
 import { TextInput, MultiCheckbox, Button } from './components/inputs';
 import SIDEBAR_STATUSES from './util/sidebarStatuses';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className='App__header'>
-            <div className='App__progress-bar'>
-                <ProgressBar percentage={20} />            
+    render() {
+      return (
+        <div className="App">
+            <div className="App__header">
+                <ProgressBar percentage={20} />
+                <div className="App__save-container">
+                    <Button
+                        underlined
+                        bold
+                        iconProps={{type: 'save'}}
+                    >
+                        Save progress
+                    </Button>
+                </div>
             </div>
-            <div className='App__logo-and_save'>
+            <div className="App__sidebar">
                 <div className='App__logo'>
                     <span>LOGO</span>
                 </div>
-                <Button
-                    underlined
-                    bold
-                    iconProps={{type: 'save'}}
-                >
-                    Save Progress
-                </Button>
-            </div>
-        </div>
-        <div className='App__body'>
-            <div className="App__sidebar">
                 <Sidebar
                     logoText='LOGO'
                     tabs={[
@@ -98,9 +96,8 @@ class App extends Component {
                 </FormPage>
             </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
 }
 
 export default App;

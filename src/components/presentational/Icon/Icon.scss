@@ -4,22 +4,26 @@
   justify-content: center;
   height: 16px;
   width: 16px;
-  min-width: 16px;
 }
 
 .icon--large {
   height: 24px;
   width: 24px;
-  transform: translateY(4px);
 }
 
 .icon--fill-primary {
   background: red;  
 }
 
-.icon--circle-primary {
+.icon--circle-primary,
+.icon--circle-background-primary {
   border: 1px solid red;
   border-radius: 50%;
+  height: 13px;
+  width: 13px;
+}
+
+.icon--circle-background-primary {
   height: 16px;
   width: 16px;
 }
@@ -39,4 +43,11 @@
   content: url('../../../images/tick.svg');
   height: 16px;
   width: 16px;  
+}
+
+.icon__save {
+  content: url('../../../images/save.svg');
+  height: 18px;
+  width: 18px;
+  transform: translateY(-1px);
 }

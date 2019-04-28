@@ -17,7 +17,7 @@ const FormPage = ({
                     iconProps={{
                         theme: 'primary',
                         type: 'arrow-left',
-                        circle: true,
+                        circleBackground: true,
                         fill: true
                     }}>
                     Back
@@ -34,6 +34,7 @@ const FormPage = ({
                         iconProps={{type: 'arrow-right', large: true}}
                         inline
                         large
+                        bold
                     >
                         Continue
                     </Button>
