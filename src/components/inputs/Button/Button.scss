@@ -7,7 +7,7 @@
   max-height: 48px;
   background-color: transparent;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .button__icon {
@@ -42,7 +42,7 @@
 }
 
 .button--row-reverse {
-  flex-direction: row-reverse;    
+  flex-direction: row-reverse;
 }
 
 .button--inline {
