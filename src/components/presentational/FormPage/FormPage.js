@@ -10,7 +10,7 @@ const FormPage = ({
     stepsTotal
 }) => {
     return (
-        <div className='form-page'>
+        <section className='form-page'>
             <div className='form-page__step'>
                 <Button
                     bold
@@ -44,7 +44,7 @@ const FormPage = ({
                     {bottomContent}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
