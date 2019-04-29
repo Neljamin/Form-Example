@@ -10,9 +10,9 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-            <div className="App__sidebar">
+            <section className="App__sidebar">
                 <div className='App__logo'>
-                    <span>LOGO</span>
+                    <h1>LOGO</h1>
                 </div>
                 <Sidebar
                     logoText='LOGO'
@@ -25,22 +25,21 @@ class App extends Component {
                         { text: 'Cross Border', status: SIDEBAR_STATUSES.INCOMPLETE }
                     ]}
                 />
-            </div>
-            <div className="App__main">
-                <div className="App__header">
+            </section>
+            <main className="App__main">
+                <header className="App__header">
                     <ProgressBar percentage={20} />
-                    <div className="App__save-container">
-                        <Button
-                            underlined
-                            bold
-                            iconProps={{type: 'save'}}
-                        >
-                            Save progress
-                        </Button>
-                    </div>
+                    <Button
+                        className='App__save-button'
+                        underlined
+                        bold
+                        iconProps={{type: 'save'}}
+                    >
+                        Save progress
+                    </Button>
                     <div className="App__left-spacer" />
-                </div>
-                <div className="App__form-page">
+                </header>
+                <section className="App__form-page">
                     <div className="App__left-spacer" />           
                     <FormPage
                         stepNumber={1}
@@ -97,8 +96,8 @@ class App extends Component {
                         }
                     >
                     </FormPage>
-                </div>
-            </div>
+                </section>
+            </main>
         </div>
       );
     }

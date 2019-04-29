@@ -6,6 +6,7 @@ import { Icon } from '../../presentational';
 
 const Button = ({
     children,
+    className,
     underlined,
     bold,
     iconProps,
@@ -17,6 +18,7 @@ const Button = ({
 }) => {
     const buttonClasses = [
         'button',
+        className,
         underlined && 'button--underlined',
         bold && 'button--bold',
         fill && `button--fill-${fill}`,
