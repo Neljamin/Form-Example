@@ -8,9 +8,10 @@
 
 .App__header {
   top: 0;
-  width: 75%;
-  height: 200px;
+  right: 0;
+  width: 100%;
   position: fixed;
+  display: flex;
   flex-direction: row-reverse;
 }
 
@@ -24,7 +25,6 @@
 }
 
 .App__sidebar {
-  grid-area: sidebar;
   padding-top: 39px;
   padding-left: 42px;
   position: fixed;
@@ -48,6 +48,11 @@
   justify-content: center;
 }
 
-.App__main {
-  margin-left: 25%;
+.App__form-page {
+  display: flex;    
+}
+
+.App__left-spacer {
+  min-width: 300px;
+  height: 100vh;
 }

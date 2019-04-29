@@ -38,62 +38,66 @@ class App extends Component {
                             Save progress
                         </Button>
                     </div>
+                    <div className="App__left-spacer" />
                 </div>
-                <FormPage
-                    stepNumber={1}
-                    stepsTotal={9}
-                    headerContent={
-                        <TextInput
-                            large
-                            label='Number of employees:'
-                        />
-                    }
-                    bottomContent={
-                        <div>
-                            <MultiCheckbox
-                                label='Payment method:'
-                                checkboxes={[
-                                    { label: 'Direct Deposit' },
-                                    { label: 'Paycheck \'live\'' },
-                                    { label: 'Both of the above' }
-                                ]}
+                <div className="App__form-page">
+                    <div className="App__left-spacer" />           
+                    <FormPage
+                        stepNumber={1}
+                        stepsTotal={9}
+                        headerContent={
+                            <TextInput
+                                large
+                                label='Number of employees:'
                             />
-                            <MultiCheckbox
-                                label='Payment method:'
-                                checkboxes={[
-                                    { label: 'Direct Deposit' },
-                                    { label: 'Paycheck \'live\'' },
-                                    { label: 'Both of the above' }
-                                ]}
-                            />
-                            <MultiCheckbox
-                                label='Payment method:'
-                                checkboxes={[
-                                    { label: 'Direct Deposit' },
-                                    { label: 'Paycheck \'live\'' },
-                                    { label: 'Both of the above' }
-                                ]}
-                            />
-                            <MultiCheckbox
-                                label='Payment method:'
-                                checkboxes={[
-                                    { label: 'Direct Deposit' },
-                                    { label: 'Paycheck \'live\'' },
-                                    { label: 'Both of the above' }
-                                ]}
-                            />
-                            <MultiCheckbox
-                                label='Payment method:'
-                                checkboxes={[
-                                    { label: 'Direct Deposit' },
-                                    { label: 'Paycheck \'live\'' },
-                                    { label: 'Both of the above' }
-                                ]}
-                            />
-                        </div>
-                    }
-                >
-                </FormPage>
+                        }
+                        bottomContent={
+                            <div>
+                                <MultiCheckbox
+                                    label='Payment method:'
+                                    checkboxes={[
+                                        { label: 'Direct Deposit' },
+                                        { label: 'Paycheck \'live\'' },
+                                        { label: 'Both of the above' }
+                                    ]}
+                                />
+                                <MultiCheckbox
+                                    label='Payment method:'
+                                    checkboxes={[
+                                        { label: 'Direct Deposit' },
+                                        { label: 'Paycheck \'live\'' },
+                                        { label: 'Both of the above' }
+                                    ]}
+                                />
+                                <MultiCheckbox
+                                    label='Payment method:'
+                                    checkboxes={[
+                                        { label: 'Direct Deposit' },
+                                        { label: 'Paycheck \'live\'' },
+                                        { label: 'Both of the above' }
+                                    ]}
+                                />
+                                <MultiCheckbox
+                                    label='Payment method:'
+                                    checkboxes={[
+                                        { label: 'Direct Deposit' },
+                                        { label: 'Paycheck \'live\'' },
+                                        { label: 'Both of the above' }
+                                    ]}
+                                />
+                                <MultiCheckbox
+                                    label='Payment method:'
+                                    checkboxes={[
+                                        { label: 'Direct Deposit' },
+                                        { label: 'Paycheck \'live\'' },
+                                        { label: 'Both of the above' }
+                                    ]}
+                                />
+                            </div>
+                        }
+                    >
+                    </FormPage>
+                </div>
             </div>
         </div>
       );
