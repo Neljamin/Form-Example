@@ -10,18 +10,6 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-            <div className="App__header">
-                <ProgressBar percentage={20} />
-                <div className="App__save-container">
-                    <Button
-                        underlined
-                        bold
-                        iconProps={{type: 'save'}}
-                    >
-                        Save progress
-                    </Button>
-                </div>
-            </div>
             <div className="App__sidebar">
                 <div className='App__logo'>
                     <span>LOGO</span>
@@ -39,6 +27,18 @@ class App extends Component {
                 />
             </div>
             <div className="App__main">
+                <div className="App__header">
+                    <ProgressBar percentage={20} />
+                    <div className="App__save-container">
+                        <Button
+                            underlined
+                            bold
+                            iconProps={{type: 'save'}}
+                        >
+                            Save progress
+                        </Button>
+                    </div>
+                </div>
                 <FormPage
                     stepNumber={1}
                     stepsTotal={9}

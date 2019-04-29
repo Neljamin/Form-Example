@@ -2,26 +2,24 @@
   background-image: url('./images/topography.png');
   background-position: top right;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed;
   width: 100%;
-  display: grid;
-  grid-template:
-    'sidebar header header header'
-    'sidebar main main main'
-    'sidebar main main main'
-    'sidebar main main main'
-    'sidebar main main main';
 }
 
 .App__header {
-  grid-area: header;
+  top: 0;
+  width: 75%;
+  height: 200px;
+  position: fixed;
   flex-direction: row-reverse;
 }
 
 .App__save-container {
+  position: fixed;
   display: flex;
-  padding-top: 27px;
-  padding-right: 90px;
+  width: 75%;
+  top: 27px;
+  right: 90px;
   flex-direction: row-reverse;    
 }
 
@@ -29,6 +27,8 @@
   grid-area: sidebar;
   padding-top: 39px;
   padding-left: 42px;
+  position: fixed;
+  top: 0;
 }
 
 .App__logo {
@@ -49,6 +49,5 @@
 }
 
 .App__main {
-  grid-area: main;
-  overflow-y: scroll;
+  margin-left: 25%;
 }
